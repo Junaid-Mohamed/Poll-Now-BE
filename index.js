@@ -17,6 +17,7 @@ app.use(cors({
 
 initializeDB();
 
+app.get('/',(req,res)=>res.send("Hi World"))
 app.post('/api/create', createPoll);
 app.get('/api/polls', getPolls);
 app.post('/api/vote', vote)
